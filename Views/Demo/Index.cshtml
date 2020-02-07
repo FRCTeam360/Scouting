@@ -1,0 +1,27 @@
+﻿@model List<Scouting_v2.Models.AvgMax>
+
+<form asp-controller-"demo" asp-action="Index" method="post" class="form-horizontal" role="form">
+    <fieldset class="form-group">
+        <h3>Checkbox List</h3>
+        <legend class="custom-checkbox checkboxlist col-sm-3 control-label"></legend>
+        <div class=" checkboxlist checkboxlist col-sm-9">
+            @{ 
+                for (int i = 0; 1 < Model.Count(); i++)
+                {
+                    <input asp-for="@Model[i].CheckBoxAnswer" type-"checkbox"/>
+                    <label asp-for="@Model[i].ID">@Model[i].Team</label>
+                    <input asp-for="@Model[i].ID" type="hidden"/>
+                    <input asp-for="@Model[i].Team" type="hidden"/>
+                    <br/>
+                }
+            } 
+        </div>
+        <div> class="form-group">
+            <div> class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <input id="Submit1" type="submit" value="submit"/>
+                </div>
+            </div>
+         </div>
+    </fieldset>
+</form>

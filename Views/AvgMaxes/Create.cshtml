@@ -1,0 +1,133 @@
+﻿@model Scouting_v2.Models.AvgMax
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>AvgMax</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Team" class="control-label"></label>
+                <input asp-for="Team" class="form-control" />
+                <span asp-validation-for="Team" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Baseline" class="control-label"></label>
+                <input asp-for="Baseline" class="form-control" />
+                <span asp-validation-for="Baseline" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AutoBalls_LVL_1_A" class="control-label"></label>
+                <input asp-for="AutoBalls_LVL_1_A" class="form-control" />
+                <span asp-validation-for="AutoBalls_LVL_1_A" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AutoBalls_LVL_1_M" class="control-label"></label>
+                <input asp-for="AutoBalls_LVL_1_M" class="form-control" />
+                <span asp-validation-for="AutoBalls_LVL_1_M" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AutoBalls_LVL_2_A" class="control-label"></label>
+                <input asp-for="AutoBalls_LVL_2_A" class="form-control" />
+                <span asp-validation-for="AutoBalls_LVL_2_A" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AutoBalls_LVL_2_M" class="control-label"></label>
+                <input asp-for="AutoBalls_LVL_2_M" class="form-control" />
+                <span asp-validation-for="AutoBalls_LVL_2_M" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AutoBalls_LVL_3_A" class="control-label"></label>
+                <input asp-for="AutoBalls_LVL_3_A" class="form-control" />
+                <span asp-validation-for="AutoBalls_LVL_3_A" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AutoBalls_LVL_3_M" class="control-label"></label>
+                <input asp-for="AutoBalls_LVL_3_M" class="form-control" />
+                <span asp-validation-for="AutoBalls_LVL_3_M" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TeleopBalls_LVL_1_A" class="control-label"></label>
+                <input asp-for="TeleopBalls_LVL_1_A" class="form-control" />
+                <span asp-validation-for="TeleopBalls_LVL_1_A" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TeleopBalls_LVL_1_M" class="control-label"></label>
+                <input asp-for="TeleopBalls_LVL_1_M" class="form-control" />
+                <span asp-validation-for="TeleopBalls_LVL_1_M" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TeleopBalls_LVL_2_A" class="control-label"></label>
+                <input asp-for="TeleopBalls_LVL_2_A" class="form-control" />
+                <span asp-validation-for="TeleopBalls_LVL_2_A" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TeleopBalls_LVL_2_M" class="control-label"></label>
+                <input asp-for="TeleopBalls_LVL_2_M" class="form-control" />
+                <span asp-validation-for="TeleopBalls_LVL_2_M" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TeleopBalls_LVL_3_A" class="control-label"></label>
+                <input asp-for="TeleopBalls_LVL_3_A" class="form-control" />
+                <span asp-validation-for="TeleopBalls_LVL_3_A" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TeleopBalls_LVL_3_M" class="control-label"></label>
+                <input asp-for="TeleopBalls_LVL_3_M" class="form-control" />
+                <span asp-validation-for="TeleopBalls_LVL_3_M" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Spinner_Number_A" class="control-label"></label>
+                <input asp-for="Spinner_Number_A" class="form-control" />
+                <span asp-validation-for="Spinner_Number_A" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Spinner_Colour_A" class="control-label"></label>
+                <input asp-for="Spinner_Colour_A" class="form-control" />
+                <span asp-validation-for="Spinner_Colour_A" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Climbed_A" class="control-label"></label>
+                <input asp-for="Climbed_A" class="form-control" />
+                <span asp-validation-for="Climbed_A" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Climb_HI_S" class="control-label"></label>
+                <input asp-for="Climb_HI_S" class="form-control" />
+                <span asp-validation-for="Climb_HI_S" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Climb_MI_S" class="control-label"></label>
+                <input asp-for="Climb_MI_S" class="form-control" />
+                <span asp-validation-for="Climb_MI_S" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Climb_LO_S" class="control-label"></label>
+                <input asp-for="Climb_LO_S" class="form-control" />
+                <span asp-validation-for="Climb_LO_S" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Balanced_A" class="control-label"></label>
+                <input asp-for="Balanced_A" class="form-control" />
+                <span asp-validation-for="Balanced_A" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

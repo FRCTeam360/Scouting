@@ -1,0 +1,148 @@
+﻿@model IEnumerable<Scouting_v2.Models.Clackamas>
+
+@{
+    ViewData["Title"] = "Clackamas";
+}
+
+<h1>Clackamas</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Team)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Baseline)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AutoBalls_LVL_1_A)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AutoBalls_LVL_1_M)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AutoBalls_LVL_2_A)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AutoBalls_LVL_2_M)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AutoBalls_LVL_3_A)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AutoBalls_LVL_3_M)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeleopBalls_LVL_1_A)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeleopBalls_LVL_1_M)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeleopBalls_LVL_2_A)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeleopBalls_LVL_2_M)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeleopBalls_LVL_3_A)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeleopBalls_LVL_3_M)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Spinner_Number_A)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Spinner_Colour_A)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Climbed_A)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Climb_HI_S)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Climb_MI_S)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Climb_LO_S)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Balanced_A)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Team)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Baseline)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AutoBalls_LVL_1_A)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AutoBalls_LVL_1_M)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AutoBalls_LVL_2_A)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AutoBalls_LVL_2_M)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AutoBalls_LVL_3_A)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AutoBalls_LVL_3_M)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeleopBalls_LVL_1_A)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeleopBalls_LVL_1_M)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeleopBalls_LVL_2_A)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeleopBalls_LVL_2_M)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeleopBalls_LVL_3_A)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeleopBalls_LVL_3_M)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Spinner_Number_A)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Spinner_Colour_A)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Climbed_A)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Climb_HI_S)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Climb_MI_S)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Climb_LO_S)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Balanced_A)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

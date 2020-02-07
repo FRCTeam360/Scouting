@@ -1,0 +1,133 @@
+﻿@model IEnumerable<Scouting_v2.Models.Stats>
+
+@{
+    ViewData["Title"] = "Data";
+}
+
+<h1>Data</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<form asp-controller="Stats" asp-action="Index">
+    <p>
+        CompetitionId: <input type="text" name="SearchString">
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Match)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Team)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Baseline)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AutoBalls_LVL_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AutoBalls_LVL_2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AutoBalls_LVL_3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeleopBalls_LVL_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeleopBalls_LVL_2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeleopBalls_LVL_3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Spinner_Number)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Spinner_Colour)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Climbed)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Climb_HI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Climb_MI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Climb_LO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Balanced)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Match)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Team)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Baseline)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AutoBalls_LVL_1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AutoBalls_LVL_2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AutoBalls_LVL_3)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TeleopBalls_LVL_1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TeleopBalls_LVL_2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TeleopBalls_LVL_3)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Spinner_Number)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Spinner_Colour)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Climbed)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Climb_HI)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Climb_MI)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Climb_LO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Balanced)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
